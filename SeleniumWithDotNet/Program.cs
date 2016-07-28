@@ -24,18 +24,18 @@ namespace SeleniumWithDotNet
         {
             PropertiesCollection.driver = new ChromeDriver(@"D:\apps\");
             // navigate to a page
-            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password&=&Login=Login");
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // intialize the page by calling its reference
-            EAPageObjects page = new EAPageObjects();
-            page.txtInitial.SendKeys("Executeautomation");
-            page.btnSave.Click();
+            // login to application
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObjects pageEA = pageLogin.Login("execute", "automation");
 
+            pageEA.FillUserForm("JD", "John", "Doe");
             //// test
             //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
