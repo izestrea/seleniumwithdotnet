@@ -12,7 +12,7 @@ namespace SeleniumWithDotNet
     class Program
     {
         // create reference for browser
-        IWebDriver driver = new ChromeDriver(@"D:\apps\");
+        //IWebDriver driver = new ChromeDriver(@"D:\apps\");
         
         static void Main(string[] args)
         {
@@ -22,8 +22,9 @@ namespace SeleniumWithDotNet
         [SetUp]
         public void Initialize()
         {
+            PropertiesCollection.driver = new ChromeDriver(@"D:\apps\");
             // navigate to a page
-            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password&=&Login=Login");
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password&=&Login=Login");
             Console.WriteLine("Opened URL");
         }
 
@@ -31,16 +32,16 @@ namespace SeleniumWithDotNet
         public void ExecuteTest()
         {
             // test
-            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
+            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
             // initial
-            SeleniumSetMethods.Entertext(driver, "Initial", "executeautomation", "name");
+            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
 
-            Console.WriteLine("Teh value from Title is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Id"));
-            Console.WriteLine("Teh value from Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
+            Console.WriteLine("The value from Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
+            Console.WriteLine("The value from Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
 
             // click
-            SeleniumSetMethods.Click(driver, "Save", "Name");
+            SeleniumSetMethods.Click("Save", PropertyType.Name);
            
         }
 
@@ -53,8 +54,8 @@ namespace SeleniumWithDotNet
         [TearDown]
         public void CLeanUp()
         {
-            //driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
-            driver.Close();
+            //PropertiesCollection.driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
+            PropertiesCollection.driver.Close();
             Console.WriteLine("Close the browser");
         }
 

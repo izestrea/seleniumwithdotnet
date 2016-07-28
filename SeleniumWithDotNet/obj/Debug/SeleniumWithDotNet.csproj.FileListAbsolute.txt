@@ -5,7 +5,6 @@ D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.pdb
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.xml
-D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.csprojResolveAssemblyReference.cache
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.exe
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.pdb
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\log4net.dll
