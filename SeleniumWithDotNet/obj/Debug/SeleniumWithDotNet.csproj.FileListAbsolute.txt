@@ -3,8 +3,6 @@ D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\chromedriver-licens
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.exe.config
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.exe
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.pdb
-D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.exe.CodeAnalysisLog.xml
-D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\SeleniumWithDotNet.exe.lastcodeanalysissucceeded
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\log4net.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit-console-runner.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit-gui-runner.dll
@@ -19,3 +17,4 @@ D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.xml
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.Support.xml
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.exe
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.pdb
+D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.csprojResolveAssemblyReference.cache
