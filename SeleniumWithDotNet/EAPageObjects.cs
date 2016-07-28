@@ -32,11 +32,16 @@ namespace SeleniumWithDotNet
 
         public void FillUserForm(string initial, string middleName, string firstName)
         {
-            SeleniumSetMethods.EnterText(txtInitial, initial);
-            SeleniumSetMethods.EnterText(txtFirstName, firstName);
-            SeleniumSetMethods.EnterText(txtMiddleName, middleName);
-            SeleniumSetMethods.Click(btnSave);
-            
+            txtInitial.EnterText(initial);
+            txtInitial.EnterText(firstName);
+            txtInitial.EnterText(middleName);
+            txtInitial.Clicks();
+
+            //SeleniumSetMethods.EnterText(txtInitial, initial);
+            //SeleniumSetMethods.EnterText(txtFirstName, firstName);
+            //SeleniumSetMethods.EnterText(txtMiddleName, middleName);
+            //SeleniumSetMethods.Click(btnSave);
+
             //txtInitial.SendKeys(initial);
             //txtFirstName.SendKeys(firstName);
             //txtMiddleName.SendKeys(middleName);

@@ -26,11 +26,11 @@ namespace SeleniumWithDotNet
         public EAPageObjects Login(string userName, string password)
         {
             // user name 
-            txtUserName.SendKeys(userName);
+            txtUserName.EnterText(userName);
             // password
-            txtPassword.SendKeys(password);
+            txtPassword.EnterText(password);
             // click button
-            btnLogin.Submit();
+            btnLogin.Clicks();
             // return the page object
             return new EAPageObjects();
         }
