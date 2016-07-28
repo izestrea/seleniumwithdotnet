@@ -36,6 +36,9 @@ namespace SeleniumWithDotNet
             // initial
             SeleniumSetMethods.Entertext(driver, "Initial", "executeautomation", "name");
 
+            Console.WriteLine("Teh value from Title is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Id"));
+            Console.WriteLine("Teh value from Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
+
             // click
             SeleniumSetMethods.Click(driver, "Save", "Name");
            
