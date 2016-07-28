@@ -15,3 +15,6 @@ D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit.framework.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit.uiexception.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit.uikit.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit.framework.xml
+D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\VisualStudioGitIgnore.dll
+D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.Support.dll
+D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.Support.xml

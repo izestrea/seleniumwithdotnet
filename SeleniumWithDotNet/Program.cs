@@ -30,14 +30,15 @@ namespace SeleniumWithDotNet
         [Test]
         public void ExecuteTest()
         {
-            // enter text (element, value, type)
-            // find element
-            IWebElement element = driver.FindElement(By.Name("q"));
+            // test
+            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
 
-            // perform operations
-            element.SendKeys("executeautomation");
+            // initial
+            SeleniumSetMethods.Entertext(driver, "Initial", "executeautomation", "name");
 
-            Console.WriteLine("Executed Test");
+            // click
+            SeleniumSetMethods.Click(driver, "Save", "Name");
+           
         }
 
         [Test]
