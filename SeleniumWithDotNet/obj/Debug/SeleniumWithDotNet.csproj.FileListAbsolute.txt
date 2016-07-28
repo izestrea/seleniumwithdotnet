@@ -17,3 +17,4 @@ D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\nunit.framework.xml
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\VisualStudioGitIgnore.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.Support.dll
 D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\bin\Debug\WebDriver.Support.xml
+D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\obj\Debug\SeleniumWithDotNet.csprojResolveAssemblyReference.cache

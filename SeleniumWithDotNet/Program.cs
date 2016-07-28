@@ -31,17 +31,22 @@ namespace SeleniumWithDotNet
         [Test]
         public void ExecuteTest()
         {
-            // test
-            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+            // intialize the page by calling its reference
+            EAPageObjects page = new EAPageObjects();
+            page.txtInitial.SendKeys("Executeautomation");
+            page.btnSave.Click();
 
-            // initial
-            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+            //// test
+            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
-            Console.WriteLine("The value from Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
-            Console.WriteLine("The value from Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+            //// initial
+            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
 
-            // click
-            SeleniumSetMethods.Click("Save", PropertyType.Name);
+            //Console.WriteLine("The value from Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
+            //Console.WriteLine("The value from Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+
+            //// click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);
            
         }
 
