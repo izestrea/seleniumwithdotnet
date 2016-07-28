@@ -17,5 +17,6 @@ namespace SeleniumWithDotNet
                 return driver.FindElement(By.Name(element)).Text;
             else
                 return String.Empty;
+        }
     }
 }
