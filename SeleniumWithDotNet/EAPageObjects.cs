@@ -36,16 +36,6 @@ namespace SeleniumWithDotNet
             txtInitial.EnterText(firstName);
             txtInitial.EnterText(middleName);
             txtInitial.Clicks();
-
-            //SeleniumSetMethods.EnterText(txtInitial, initial);
-            //SeleniumSetMethods.EnterText(txtFirstName, firstName);
-            //SeleniumSetMethods.EnterText(txtMiddleName, middleName);
-            //SeleniumSetMethods.Click(btnSave);
-
-            //txtInitial.SendKeys(initial);
-            //txtFirstName.SendKeys(firstName);
-            //txtMiddleName.SendKeys(middleName);
-            //btnSave.Click();
         }
     }
 }

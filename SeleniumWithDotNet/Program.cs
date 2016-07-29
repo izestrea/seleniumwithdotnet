@@ -10,10 +10,7 @@ using System.Threading.Tasks;
 namespace SeleniumWithDotNet
 {
     class Program
-    {
-        // create reference for browser
-        //IWebDriver driver = new ChromeDriver(@"D:\apps\");
-        
+    {        
         static void Main(string[] args)
         {
           
@@ -38,18 +35,6 @@ namespace SeleniumWithDotNet
             EAPageObjects pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
 
             pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "MiddleName"), ExcelLib.ReadData(1, "FirstName"));
-            //// test
-            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
-
-            //// initial
-            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
-
-            //Console.WriteLine("The value from Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
-            //Console.WriteLine("The value from Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
-
-            //// click
-            //SeleniumSetMethods.Click("Save", PropertyType.Name);
-           
         }
 
         [Test]
@@ -65,6 +50,5 @@ namespace SeleniumWithDotNet
             PropertiesCollection.driver.Close();
             Console.WriteLine("Close the browser");
         }
-
     }
 }
