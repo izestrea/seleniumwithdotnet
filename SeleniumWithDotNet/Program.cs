@@ -31,11 +31,13 @@ namespace SeleniumWithDotNet
         [Test]
         public void ExecuteTest()
         {
+            ExcelLib.PopulateInCollection(@"D:\workspace\SeleniumWithDotNet\SeleniumWithDotNet\Data.xlsx");
+
             // login to application
             LoginPageObject pageLogin = new LoginPageObject();
-            EAPageObjects pageEA = pageLogin.Login("execute", "automation");
+            EAPageObjects pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
 
-            pageEA.FillUserForm("JD", "John", "Doe");
+            pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "MiddleName"), ExcelLib.ReadData(1, "FirstName"));
             //// test
             //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
